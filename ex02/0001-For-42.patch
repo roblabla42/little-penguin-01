@@ -1,0 +1,25 @@
+From 9f960d0347383c615318bb48076e4418d2fc35ae Mon Sep 17 00:00:00 2001
+From: roblabla <unfiltered@roblab.la>
+Date: Fri, 24 Mar 2017 17:51:41 +0100
+Subject: For 42
+
+---
+ Makefile | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/Makefile b/Makefile
+index b2faa9319372..63117492989b 100644
+--- a/Makefile
++++ b/Makefile
+@@ -1,7 +1,7 @@
+ VERSION = 4
+ PATCHLEVEL = 11
+ SUBLEVEL = 0
+-EXTRAVERSION = -rc3
++EXTRAVERSION = -rc3-thor_kernel
+ NAME = Fearless Coyote
+ 
+ # *DOCUMENTATION*
+-- 
+2.12.1
+

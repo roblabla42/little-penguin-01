@@ -1,0 +1,378 @@
+-- Logs begin at Thu 2017-01-26 15:40:35 CET, end at Wed 2017-04-05 18:34:28 CEST. --
+Apr 05 18:29:33 roblabla systemd-journald[154]: Time spent on flushing to /var is 646us for 0 entries.
+Apr 05 18:29:33 roblabla kernel: Linux version 4.11.0-1-next-20170405-next (roblabla@roblabla) (gcc version 6.3.1 20170306 (GCC) ) #1 SMP PREEMPT Wed Apr 5 17:05:58 CEST 2017
+Apr 05 18:29:33 roblabla kernel: Command line: BOOT_IMAGE=/boot/vmlinuz-linux-next root=UUID=cdfd395b-c9e2-40cd-86a6-f4219032442c rw quiet
+Apr 05 18:29:33 roblabla kernel: x86/fpu: Supporting XSAVE feature 0x001: 'x87 floating point registers'
+Apr 05 18:29:33 roblabla kernel: x86/fpu: Supporting XSAVE feature 0x002: 'SSE registers'
+Apr 05 18:29:33 roblabla kernel: x86/fpu: Supporting XSAVE feature 0x004: 'AVX registers'
+Apr 05 18:29:33 roblabla kernel: x86/fpu: xstate_offset[2]:  576, xstate_sizes[2]:  256
+Apr 05 18:29:33 roblabla kernel: x86/fpu: Enabled xstate features 0x7, context size is 832 bytes, using 'standard' format.
+Apr 05 18:29:33 roblabla kernel: e820: BIOS-provided physical RAM map:
+Apr 05 18:29:33 roblabla kernel: BIOS-e820: [mem 0x0000000000000000-0x000000000009fbff] usable
+Apr 05 18:29:33 roblabla kernel: BIOS-e820: [mem 0x000000000009fc00-0x000000000009ffff] reserved
+Apr 05 18:29:33 roblabla kernel: BIOS-e820: [mem 0x00000000000f0000-0x00000000000fffff] reserved
+Apr 05 18:29:33 roblabla kernel: BIOS-e820: [mem 0x0000000000100000-0x000000003ffeffff] usable
+Apr 05 18:29:33 roblabla kernel: BIOS-e820: [mem 0x000000003fff0000-0x000000003fffffff] ACPI data
+Apr 05 18:29:33 roblabla kernel: BIOS-e820: [mem 0x00000000fec00000-0x00000000fec00fff] reserved
+Apr 05 18:29:33 roblabla kernel: BIOS-e820: [mem 0x00000000fee00000-0x00000000fee00fff] reserved
+Apr 05 18:29:33 roblabla kernel: BIOS-e820: [mem 0x00000000fffc0000-0x00000000ffffffff] reserved
+Apr 05 18:29:33 roblabla kernel: tsc: Fast TSC calibration using PIT
+Apr 05 18:29:33 roblabla kernel: NX (Execute Disable) protection: active
+Apr 05 18:29:33 roblabla kernel: SMBIOS 2.5 present.
+Apr 05 18:29:33 roblabla kernel: DMI: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+Apr 05 18:29:33 roblabla kernel: Hypervisor detected: KVM
+Apr 05 18:29:33 roblabla kernel: e820: update [mem 0x00000000-0x00000fff] usable ==> reserved
+Apr 05 18:29:33 roblabla kernel: e820: remove [mem 0x000a0000-0x000fffff] usable
+Apr 05 18:29:33 roblabla kernel: e820: last_pfn = 0x3fff0 max_arch_pfn = 0x400000000
+Apr 05 18:29:33 roblabla kernel: MTRR default type: uncachable
+Apr 05 18:29:33 roblabla kernel: MTRR variable ranges disabled:
+Apr 05 18:29:33 roblabla kernel: MTRR: Disabled
+Apr 05 18:29:33 roblabla kernel: x86/PAT: MTRRs disabled, skipping PAT initialization too.
+Apr 05 18:29:33 roblabla kernel: x86/PAT: Configuration [0-7]: WB  WT  UC- UC  WB  WT  UC- UC  
+Apr 05 18:29:33 roblabla kernel: CPU MTRRs all blank - virtualized system.
+Apr 05 18:29:33 roblabla kernel: found SMP MP-table at [mem 0x0009fff0-0x0009ffff] mapped at [ffff88000009fff0]
+Apr 05 18:29:33 roblabla kernel: Scanning 1 areas for low memory corruption
+Apr 05 18:29:33 roblabla kernel: Base memory trampoline at [ffff880000099000] 99000 size 24576
+Apr 05 18:29:33 roblabla kernel: BRK [0x01d52000, 0x01d52fff] PGTABLE
+Apr 05 18:29:33 roblabla kernel: BRK [0x01d53000, 0x01d53fff] PGTABLE
+Apr 05 18:29:33 roblabla kernel: BRK [0x01d54000, 0x01d54fff] PGTABLE
+Apr 05 18:29:33 roblabla kernel: BRK [0x01d55000, 0x01d55fff] PGTABLE
+Apr 05 18:29:33 roblabla kernel: RAMDISK: [mem 0x374d3000-0x37a60fff]
+Apr 05 18:29:33 roblabla kernel: ACPI: Early table checksum verification disabled
+Apr 05 18:29:33 roblabla kernel: ACPI: RSDP 0x00000000000E0000 000024 (v02 VBOX  )
+Apr 05 18:29:33 roblabla kernel: ACPI: XSDT 0x000000003FFF0030 00003C (v01 VBOX   VBOXXSDT 00000001 ASL  00000061)
+Apr 05 18:29:33 roblabla kernel: ACPI: FACP 0x000000003FFF00F0 0000F4 (v04 VBOX   VBOXFACP 00000001 ASL  00000061)
+Apr 05 18:29:33 roblabla kernel: ACPI: DSDT 0x000000003FFF0470 00210F (v01 VBOX   VBOXBIOS 00000002 INTL 20100528)
+Apr 05 18:29:33 roblabla kernel: ACPI: FACS 0x000000003FFF0200 000040
+Apr 05 18:29:33 roblabla kernel: ACPI: FACS 0x000000003FFF0200 000040
+Apr 05 18:29:33 roblabla kernel: ACPI: APIC 0x000000003FFF0240 000054 (v02 VBOX   VBOXAPIC 00000001 ASL  00000061)
+Apr 05 18:29:33 roblabla kernel: ACPI: SSDT 0x000000003FFF02A0 0001CC (v01 VBOX   VBOXCPUT 00000002 INTL 20100528)
+Apr 05 18:29:33 roblabla kernel: ACPI: Local APIC address 0xfee00000
+Apr 05 18:29:33 roblabla kernel: No NUMA configuration found
+Apr 05 18:29:33 roblabla kernel: Faking a node at [mem 0x0000000000000000-0x000000003ffeffff]
+Apr 05 18:29:33 roblabla kernel: NODE_DATA(0) allocated [mem 0x3ffeb000-0x3ffeffff]
+Apr 05 18:29:33 roblabla kernel: kvm-clock: Using msrs 4b564d01 and 4b564d00
+Apr 05 18:29:33 roblabla kernel: kvm-clock: cpu 0, msr 0:3ffe9001, primary cpu clock
+Apr 05 18:29:33 roblabla kernel: kvm-clock: using sched offset of 848452199170 cycles
+Apr 05 18:29:33 roblabla kernel: clocksource: kvm-clock: mask: 0xffffffffffffffff max_cycles: 0x1cd42e4dffb, max_idle_ns: 881590591483 ns
+Apr 05 18:29:33 roblabla kernel: Zone ranges:
+Apr 05 18:29:33 roblabla kernel:   DMA      [mem 0x0000000000001000-0x0000000000ffffff]
+Apr 05 18:29:33 roblabla kernel:   DMA32    [mem 0x0000000001000000-0x000000003ffeffff]
+Apr 05 18:29:33 roblabla kernel:   Normal   empty
+Apr 05 18:29:33 roblabla kernel:   Device   empty
+Apr 05 18:29:33 roblabla kernel: Movable zone start for each node
+Apr 05 18:29:33 roblabla kernel: Early memory node ranges
+Apr 05 18:29:33 roblabla kernel:   node   0: [mem 0x0000000000001000-0x000000000009efff]
+Apr 05 18:29:33 roblabla kernel:   node   0: [mem 0x0000000000100000-0x000000003ffeffff]
+Apr 05 18:29:33 roblabla kernel: Initmem setup node 0 [mem 0x0000000000001000-0x000000003ffeffff]
+Apr 05 18:29:33 roblabla kernel: On node 0 totalpages: 262030
+Apr 05 18:29:33 roblabla kernel:   DMA zone: 64 pages used for memmap
+Apr 05 18:29:33 roblabla kernel:   DMA zone: 21 pages reserved
+Apr 05 18:29:33 roblabla kernel:   DMA zone: 3998 pages, LIFO batch:0
+Apr 05 18:29:33 roblabla kernel:   DMA32 zone: 4032 pages used for memmap
+Apr 05 18:29:33 roblabla kernel:   DMA32 zone: 258032 pages, LIFO batch:31
+Apr 05 18:29:33 roblabla kernel: ACPI: PM-Timer IO Port: 0x4008
+Apr 05 18:29:33 roblabla kernel: ACPI: Local APIC address 0xfee00000
+Apr 05 18:29:33 roblabla kernel: IOAPIC[0]: apic_id 1, version 32, address 0xfec00000, GSI 0-23
+Apr 05 18:29:33 roblabla kernel: ACPI: INT_SRC_OVR (bus 0 bus_irq 0 global_irq 2 dfl dfl)
+Apr 05 18:29:33 roblabla kernel: ACPI: INT_SRC_OVR (bus 0 bus_irq 9 global_irq 9 high level)
+Apr 05 18:29:33 roblabla kernel: ACPI: IRQ0 used by override.
+Apr 05 18:29:33 roblabla kernel: ACPI: IRQ9 used by override.
+Apr 05 18:29:33 roblabla kernel: Using ACPI (MADT) for SMP configuration information
+Apr 05 18:29:33 roblabla kernel: smpboot: Allowing 1 CPUs, 0 hotplug CPUs
+Apr 05 18:29:33 roblabla kernel: PM: Registered nosave memory: [mem 0x00000000-0x00000fff]
+Apr 05 18:29:33 roblabla kernel: PM: Registered nosave memory: [mem 0x0009f000-0x0009ffff]
+Apr 05 18:29:33 roblabla kernel: PM: Registered nosave memory: [mem 0x000a0000-0x000effff]
+Apr 05 18:29:33 roblabla kernel: PM: Registered nosave memory: [mem 0x000f0000-0x000fffff]
+Apr 05 18:29:33 roblabla kernel: e820: [mem 0x40000000-0xfebfffff] available for PCI devices
+Apr 05 18:29:33 roblabla kernel: Booting paravirtualized kernel on KVM
+Apr 05 18:29:33 roblabla kernel: clocksource: refined-jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 6370452778343963 ns
+Apr 05 18:29:33 roblabla kernel: setup_percpu: NR_CPUS:128 nr_cpumask_bits:128 nr_cpu_ids:1 nr_node_ids:1
+Apr 05 18:29:33 roblabla kernel: percpu: Embedded 37 pages/cpu @ffff88003fc00000 s111640 r8192 d31720 u2097152
+Apr 05 18:29:33 roblabla kernel: pcpu-alloc: s111640 r8192 d31720 u2097152 alloc=1*2097152
+Apr 05 18:29:33 roblabla kernel: pcpu-alloc: [0] 0 
+Apr 05 18:29:33 roblabla kernel: PV qspinlock hash table entries: 256 (order: 0, 4096 bytes)
+Apr 05 18:29:33 roblabla kernel: Built 1 zonelists in Node order, mobility grouping on.  Total pages: 257913
+Apr 05 18:29:33 roblabla kernel: Policy zone: DMA32
+Apr 05 18:29:33 roblabla kernel: Kernel command line: BOOT_IMAGE=/boot/vmlinuz-linux-next root=UUID=cdfd395b-c9e2-40cd-86a6-f4219032442c rw quiet
+Apr 05 18:29:33 roblabla kernel: PID hash table entries: 4096 (order: 3, 32768 bytes)
+Apr 05 18:29:33 roblabla kernel: Calgary: detecting Calgary via BIOS EBDA area
+Apr 05 18:29:33 roblabla kernel: Calgary: Unable to locate Rio Grande table in EBDA - bailing!
+Apr 05 18:29:33 roblabla kernel: Memory: 1012060K/1048120K available (6391K kernel code, 1091K rwdata, 1996K rodata, 1312K init, 904K bss, 36060K reserved, 0K cma-reserved)
+Apr 05 18:29:33 roblabla kernel: SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=1, Nodes=1
+Apr 05 18:29:33 roblabla kernel: Preemptible hierarchical RCU implementation.
+Apr 05 18:29:33 roblabla kernel:         RCU restricting CPUs from NR_CPUS=128 to nr_cpu_ids=1.
+Apr 05 18:29:33 roblabla kernel: RCU: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=1
+Apr 05 18:29:33 roblabla kernel: NR_IRQS:8448 nr_irqs:256 16
+Apr 05 18:29:33 roblabla kernel: Console: colour dummy device 80x25
+Apr 05 18:29:33 roblabla kernel: console [tty0] enabled
+Apr 05 18:29:33 roblabla kernel: tsc: Detected 2893.406 MHz processor
+Apr 05 18:29:33 roblabla kernel: Calibrating delay loop (skipped) preset value.. 5789.92 BogoMIPS (lpj=9644686)
+Apr 05 18:29:33 roblabla kernel: pid_max: default: 32768 minimum: 301
+Apr 05 18:29:33 roblabla kernel: ACPI: Core revision 20170119
+Apr 05 18:29:33 roblabla kernel: ACPI: 2 ACPI AML tables successfully acquired and loaded
+Apr 05 18:29:33 roblabla kernel: Security Framework initialized
+Apr 05 18:29:33 roblabla kernel: Yama: becoming mindful.
+Apr 05 18:29:33 roblabla kernel: Dentry cache hash table entries: 131072 (order: 8, 1048576 bytes)
+Apr 05 18:29:33 roblabla kernel: Inode-cache hash table entries: 65536 (order: 7, 524288 bytes)
+Apr 05 18:29:33 roblabla kernel: Mount-cache hash table entries: 2048 (order: 2, 16384 bytes)
+Apr 05 18:29:33 roblabla kernel: Mountpoint-cache hash table entries: 2048 (order: 2, 16384 bytes)
+Apr 05 18:29:33 roblabla kernel: CPU: Physical Processor ID: 0
+Apr 05 18:29:33 roblabla kernel: mce: CPU supports 0 MCE banks
+Apr 05 18:29:33 roblabla kernel: process: using mwait in idle threads
+Apr 05 18:29:33 roblabla kernel: Last level iTLB entries: 4KB 512, 2MB 8, 4MB 8
+Apr 05 18:29:33 roblabla kernel: Last level dTLB entries: 4KB 512, 2MB 32, 4MB 32, 1GB 0
+Apr 05 18:29:33 roblabla kernel: Freeing SMP alternatives memory: 24K
+Apr 05 18:29:33 roblabla kernel: ftrace: allocating 25509 entries in 100 pages
+Apr 05 18:29:33 roblabla kernel: smpboot: Max logical packages: 1
+Apr 05 18:29:33 roblabla kernel: x2apic enabled
+Apr 05 18:29:33 roblabla kernel: Switched APIC routing to physical x2apic.
+Apr 05 18:29:33 roblabla kernel: ..TIMER: vector=0x30 apic1=0 pin1=2 apic2=-1 pin2=-1
+Apr 05 18:29:33 roblabla kernel: smpboot: CPU0: Intel(R) Core(TM) i5-3470S CPU @ 2.90GHz (family: 0x6, model: 0x3a, stepping: 0x9)
+Apr 05 18:29:33 roblabla kernel: Performance Events: unsupported p6 CPU model 58 no PMU driver, software events only.
+Apr 05 18:29:33 roblabla kernel: smp: Bringing up secondary CPUs ...
+Apr 05 18:29:33 roblabla kernel: smp: Brought up 1 node, 1 CPU
+Apr 05 18:29:33 roblabla kernel: smpboot: Total of 1 processors activated (5789.92 BogoMIPS)
+Apr 05 18:29:33 roblabla kernel: sched_clock: Marking stable (59999994, 0)->(177044066, -117044072)
+Apr 05 18:29:33 roblabla kernel: devtmpfs: initialized
+Apr 05 18:29:33 roblabla kernel: x86/mm: Memory block size: 128MB
+Apr 05 18:29:33 roblabla kernel: clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 6370867519511994 ns
+Apr 05 18:29:33 roblabla kernel: futex hash table entries: 256 (order: 2, 16384 bytes)
+Apr 05 18:29:33 roblabla kernel: pinctrl core: initialized pinctrl subsystem
+Apr 05 18:29:33 roblabla kernel: RTC time: 16:29:27, date: 04/05/17
+Apr 05 18:29:33 roblabla kernel: NET: Registered protocol family 16
+Apr 05 18:29:33 roblabla kernel: cpuidle: using governor ladder
+Apr 05 18:29:33 roblabla kernel: cpuidle: using governor menu
+Apr 05 18:29:33 roblabla kernel: PCCT header not found.
+Apr 05 18:29:33 roblabla kernel: ACPI: bus type PCI registered
+Apr 05 18:29:33 roblabla kernel: acpiphp: ACPI Hot Plug PCI Controller Driver version: 0.5
+Apr 05 18:29:33 roblabla kernel: PCI: Using configuration type 1 for base access
+Apr 05 18:29:33 roblabla kernel: HugeTLB registered 2 MB page size, pre-allocated 0 pages
+Apr 05 18:29:33 roblabla kernel: ACPI: Added _OSI(Module Device)
+Apr 05 18:29:33 roblabla kernel: ACPI: Added _OSI(Processor Device)
+Apr 05 18:29:33 roblabla kernel: ACPI: Added _OSI(3.0 _SCP Extensions)
+Apr 05 18:29:33 roblabla kernel: ACPI: Added _OSI(Processor Aggregator Device)
+Apr 05 18:29:33 roblabla kernel: ACPI: Executed 1 blocks of module-level executable AML code
+Apr 05 18:29:33 roblabla kernel: ACPI: Interpreter enabled
+Apr 05 18:29:33 roblabla kernel: ACPI: (supports S0 S5)
+Apr 05 18:29:33 roblabla kernel: ACPI: Using IOAPIC for interrupt routing
+Apr 05 18:29:33 roblabla kernel: PCI: Using host bridge windows from ACPI; if necessary, use "pci=nocrs" and report a bug
+Apr 05 18:29:33 roblabla kernel: ACPI: PCI Root Bridge [PCI0] (domain 0000 [bus 00-ff])
+Apr 05 18:29:33 roblabla kernel: acpi PNP0A03:00: _OSC: OS supports [ASPM ClockPM Segments MSI]
+Apr 05 18:29:33 roblabla kernel: acpi PNP0A03:00: _OSC failed (AE_NOT_FOUND); disabling ASPM
+Apr 05 18:29:33 roblabla kernel: acpi PNP0A03:00: fail to add MMCONFIG information, can't access extended PCI configuration space under this bridge.
+Apr 05 18:29:33 roblabla kernel: PCI host bridge to bus 0000:00
+Apr 05 18:29:33 roblabla kernel: pci_bus 0000:00: root bus resource [io  0x0000-0x0cf7 window]
+Apr 05 18:29:33 roblabla kernel: pci_bus 0000:00: root bus resource [io  0x0d00-0xffff window]
+Apr 05 18:29:33 roblabla kernel: pci_bus 0000:00: root bus resource [mem 0x000a0000-0x000bffff window]
+Apr 05 18:29:33 roblabla kernel: pci_bus 0000:00: root bus resource [mem 0x40000000-0xffdfffff window]
+Apr 05 18:29:33 roblabla kernel: pci_bus 0000:00: root bus resource [bus 00-ff]
+Apr 05 18:29:33 roblabla kernel: pci 0000:00:00.0: [8086:1237] type 00 class 0x060000
+Apr 05 18:29:33 roblabla kernel: pci 0000:00:01.0: [8086:7000] type 00 class 0x060100
+Apr 05 18:29:33 roblabla kernel: pci 0000:00:01.1: [8086:7111] type 00 class 0x01018a
+Apr 05 18:29:33 roblabla kernel: pci 0000:00:01.1: reg 0x20: [io  0xd000-0xd00f]
+Apr 05 18:29:33 roblabla kernel: pci 0000:00:01.1: legacy IDE quirk: reg 0x10: [io  0x01f0-0x01f7]
+Apr 05 18:29:33 roblabla kernel: pci 0000:00:01.1: legacy IDE quirk: reg 0x14: [io  0x03f6]
+Apr 05 18:29:33 roblabla kernel: pci 0000:00:01.1: legacy IDE quirk: reg 0x18: [io  0x0170-0x0177]
+Apr 05 18:29:33 roblabla kernel: pci 0000:00:01.1: legacy IDE quirk: reg 0x1c: [io  0x0376]
+Apr 05 18:29:33 roblabla kernel: pci 0000:00:02.0: [80ee:beef] type 00 class 0x030000
+Apr 05 18:29:33 roblabla kernel: pci 0000:00:02.0: reg 0x10: [mem 0xe0000000-0xe0ffffff pref]
+Apr 05 18:29:33 roblabla kernel: pci 0000:00:03.0: [8086:100e] type 00 class 0x020000
+Apr 05 18:29:33 roblabla kernel: pci 0000:00:03.0: reg 0x10: [mem 0xf0000000-0xf001ffff]
+Apr 05 18:29:33 roblabla kernel: pci 0000:00:03.0: reg 0x18: [io  0xd010-0xd017]
+Apr 05 18:29:33 roblabla kernel: pci 0000:00:04.0: [80ee:cafe] type 00 class 0x088000
+Apr 05 18:29:33 roblabla kernel: pci 0000:00:04.0: reg 0x10: [io  0xd020-0xd03f]
+Apr 05 18:29:33 roblabla kernel: pci 0000:00:04.0: reg 0x14: [mem 0xf0400000-0xf07fffff]
+Apr 05 18:29:33 roblabla kernel: pci 0000:00:04.0: reg 0x18: [mem 0xf0800000-0xf0803fff pref]
+Apr 05 18:29:33 roblabla kernel: pci 0000:00:05.0: [8086:2415] type 00 class 0x040100
+Apr 05 18:29:33 roblabla kernel: pci 0000:00:05.0: reg 0x10: [io  0xd100-0xd1ff]
+Apr 05 18:29:33 roblabla kernel: pci 0000:00:05.0: reg 0x14: [io  0xd200-0xd23f]
+Apr 05 18:29:33 roblabla kernel: pci 0000:00:06.0: [106b:003f] type 00 class 0x0c0310
+Apr 05 18:29:33 roblabla kernel: pci 0000:00:06.0: reg 0x10: [mem 0xf0804000-0xf0804fff]
+Apr 05 18:29:33 roblabla kernel: pci 0000:00:07.0: [8086:7113] type 00 class 0x068000
+Apr 05 18:29:33 roblabla kernel: pci 0000:00:0d.0: [8086:2829] type 00 class 0x010601
+Apr 05 18:29:33 roblabla kernel: pci 0000:00:0d.0: reg 0x10: [io  0xd240-0xd247]
+Apr 05 18:29:33 roblabla kernel: pci 0000:00:0d.0: reg 0x18: [io  0xd250-0xd257]
+Apr 05 18:29:33 roblabla kernel: pci 0000:00:0d.0: reg 0x20: [io  0xd260-0xd26f]
+Apr 05 18:29:33 roblabla kernel: pci 0000:00:0d.0: reg 0x24: [mem 0xf0806000-0xf0807fff]
+Apr 05 18:29:33 roblabla kernel: ACPI: PCI Interrupt Link [LNKA] (IRQs 5 9 10 *11)
+Apr 05 18:29:33 roblabla kernel: ACPI: PCI Interrupt Link [LNKB] (IRQs 5 9 10 *11)
+Apr 05 18:29:33 roblabla kernel: ACPI: PCI Interrupt Link [LNKC] (IRQs 5 9 *10 11)
+Apr 05 18:29:33 roblabla kernel: ACPI: PCI Interrupt Link [LNKD] (IRQs 5 *9 10 11)
+Apr 05 18:29:33 roblabla kernel: ACPI: Enabled 2 GPEs in block 00 to 07
+Apr 05 18:29:33 roblabla kernel: pci 0000:00:02.0: vgaarb: setting as boot VGA device
+Apr 05 18:29:33 roblabla kernel: pci 0000:00:02.0: vgaarb: VGA device added: decodes=io+mem,owns=io+mem,locks=none
+Apr 05 18:29:33 roblabla kernel: pci 0000:00:02.0: vgaarb: bridge control possible
+Apr 05 18:29:33 roblabla kernel: vgaarb: loaded
+Apr 05 18:29:33 roblabla kernel: PCI: Using ACPI for IRQ routing
+Apr 05 18:29:33 roblabla kernel: PCI: pci_cache_line_size set to 64 bytes
+Apr 05 18:29:33 roblabla kernel: e820: reserve RAM buffer [mem 0x0009fc00-0x0009ffff]
+Apr 05 18:29:33 roblabla kernel: e820: reserve RAM buffer [mem 0x3fff0000-0x3fffffff]
+Apr 05 18:29:33 roblabla kernel: NetLabel: Initializing
+Apr 05 18:29:33 roblabla kernel: NetLabel:  domain hash size = 128
+Apr 05 18:29:33 roblabla kernel: NetLabel:  protocols = UNLABELED CIPSOv4 CALIPSO
+Apr 05 18:29:33 roblabla kernel: NetLabel:  unlabeled traffic allowed by default
+Apr 05 18:29:33 roblabla kernel: clocksource: Switched to clocksource kvm-clock
+Apr 05 18:29:33 roblabla kernel: VFS: Disk quotas dquot_6.6.0
+Apr 05 18:29:33 roblabla kernel: VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+Apr 05 18:29:33 roblabla kernel: pnp: PnP ACPI init
+Apr 05 18:29:33 roblabla kernel: pnp 00:00: Plug and Play ACPI device, IDs PNP0303 (active)
+Apr 05 18:29:33 roblabla kernel: pnp 00:01: Plug and Play ACPI device, IDs PNP0f03 (active)
+Apr 05 18:29:33 roblabla kernel: pnp 00:02: Plug and Play ACPI device, IDs PNP0501 (active)
+Apr 05 18:29:33 roblabla kernel: pnp: PnP ACPI: found 3 devices
+Apr 05 18:29:33 roblabla kernel: clocksource: acpi_pm: mask: 0xffffff max_cycles: 0xffffff, max_idle_ns: 2085701024 ns
+Apr 05 18:29:33 roblabla kernel: pci_bus 0000:00: resource 4 [io  0x0000-0x0cf7 window]
+Apr 05 18:29:33 roblabla kernel: pci_bus 0000:00: resource 5 [io  0x0d00-0xffff window]
+Apr 05 18:29:33 roblabla kernel: pci_bus 0000:00: resource 6 [mem 0x000a0000-0x000bffff window]
+Apr 05 18:29:33 roblabla kernel: pci_bus 0000:00: resource 7 [mem 0x40000000-0xffdfffff window]
+Apr 05 18:29:33 roblabla kernel: NET: Registered protocol family 2
+Apr 05 18:29:33 roblabla kernel: TCP established hash table entries: 8192 (order: 4, 65536 bytes)
+Apr 05 18:29:33 roblabla kernel: TCP bind hash table entries: 8192 (order: 5, 131072 bytes)
+Apr 05 18:29:33 roblabla kernel: TCP: Hash tables configured (established 8192 bind 8192)
+Apr 05 18:29:33 roblabla kernel: UDP hash table entries: 512 (order: 2, 16384 bytes)
+Apr 05 18:29:33 roblabla kernel: UDP-Lite hash table entries: 512 (order: 2, 16384 bytes)
+Apr 05 18:29:33 roblabla kernel: NET: Registered protocol family 1
+Apr 05 18:29:33 roblabla kernel: pci 0000:00:00.0: Limiting direct PCI/PCI transfers
+Apr 05 18:29:33 roblabla kernel: pci 0000:00:01.0: Activating ISA DMA hang workarounds
+Apr 05 18:29:33 roblabla kernel: pci 0000:00:02.0: Video device with shadowed ROM at [mem 0x000c0000-0x000dffff]
+Apr 05 18:29:33 roblabla kernel: PCI: CLS 0 bytes, default 64
+Apr 05 18:29:33 roblabla kernel: Unpacking initramfs...
+Apr 05 18:29:33 roblabla kernel: Freeing initrd memory: 5688K
+Apr 05 18:29:33 roblabla kernel: platform rtc_cmos: registered platform RTC device (no PNP device found)
+Apr 05 18:29:33 roblabla kernel: Scanning for low memory corruption every 60 seconds
+Apr 05 18:29:33 roblabla kernel: Initialise system trusted keyrings
+Apr 05 18:29:33 roblabla kernel: workingset: timestamp_bits=40 max_order=18 bucket_order=0
+Apr 05 18:29:33 roblabla kernel: zbud: loaded
+Apr 05 18:29:33 roblabla kernel: Key type asymmetric registered
+Apr 05 18:29:33 roblabla kernel: Block layer SCSI generic (bsg) driver version 0.4 loaded (major 249)
+Apr 05 18:29:33 roblabla kernel: io scheduler noop registered
+Apr 05 18:29:33 roblabla kernel: io scheduler deadline registered
+Apr 05 18:29:33 roblabla kernel: io scheduler cfq registered (default)
+Apr 05 18:29:33 roblabla kernel: io scheduler mq-deadline registered
+Apr 05 18:29:33 roblabla kernel: vesafb: mode is 640x480x32, linelength=2560, pages=0
+Apr 05 18:29:33 roblabla kernel: vesafb: scrolling: redraw
+Apr 05 18:29:33 roblabla kernel: vesafb: Truecolor: size=8:8:8:8, shift=24:16:8:0
+Apr 05 18:29:33 roblabla kernel: vesafb: framebuffer at 0xe0000000, mapped to 0xffffc90000400000, using 1216k, total 1216k
+Apr 05 18:29:33 roblabla kernel: Console: switching to colour frame buffer device 80x30
+Apr 05 18:29:33 roblabla kernel: fb0: VESA VGA frame buffer device
+Apr 05 18:29:33 roblabla kernel: GHES: HEST is not enabled!
+Apr 05 18:29:33 roblabla kernel: Serial: 8250/16550 driver, 4 ports, IRQ sharing enabled
+Apr 05 18:29:33 roblabla kernel: 00:02: ttyS0 at I/O 0x3f8 (irq = 4, base_baud = 115200) is a 16550A
+Apr 05 18:29:33 roblabla kernel: Linux agpgart interface v0.103
+Apr 05 18:29:33 roblabla kernel: rtc_cmos rtc_cmos: rtc core: registered rtc_cmos as rtc0
+Apr 05 18:29:33 roblabla kernel: rtc_cmos rtc_cmos: alarms up to one day, 114 bytes nvram
+Apr 05 18:29:33 roblabla kernel: ledtrig-cpu: registered to indicate activity on CPUs
+Apr 05 18:29:33 roblabla kernel: NET: Registered protocol family 10
+Apr 05 18:29:33 roblabla kernel: Segment Routing with IPv6
+Apr 05 18:29:33 roblabla kernel: NET: Registered protocol family 17
+Apr 05 18:29:33 roblabla kernel: registered taskstats version 1
+Apr 05 18:29:33 roblabla kernel: Loading compiled-in X.509 certificates
+Apr 05 18:29:33 roblabla kernel: zswap: loaded using pool lzo/zbud
+Apr 05 18:29:33 roblabla kernel:   Magic number: 13:983:488
+Apr 05 18:29:33 roblabla kernel: rtc_cmos rtc_cmos: setting system clock to 2017-04-05 16:29:27 UTC (1491409767)
+Apr 05 18:29:33 roblabla kernel: PM: Hibernation image not present or could not be loaded.
+Apr 05 18:29:33 roblabla kernel: Freeing unused kernel memory: 1312K
+Apr 05 18:29:33 roblabla kernel: Write protecting the kernel read-only data: 10240k
+Apr 05 18:29:33 roblabla kernel: Freeing unused kernel memory: 1784K
+Apr 05 18:29:33 roblabla kernel: Freeing unused kernel memory: 52K
+Apr 05 18:29:33 roblabla kernel: random: systemd-tmpfile: uninitialized urandom read (16 bytes read)
+Apr 05 18:29:33 roblabla kernel: random: udevadm: uninitialized urandom read (16 bytes read)
+Apr 05 18:29:33 roblabla kernel: random: udevadm: uninitialized urandom read (16 bytes read)
+Apr 05 18:29:33 roblabla kernel: random: systemd-udevd: uninitialized urandom read (16 bytes read)
+Apr 05 18:29:33 roblabla kernel: random: systemd-udevd: uninitialized urandom read (16 bytes read)
+Apr 05 18:29:33 roblabla kernel: random: systemd-udevd: uninitialized urandom read (16 bytes read)
+Apr 05 18:29:33 roblabla kernel: random: systemd-udevd: uninitialized urandom read (16 bytes read)
+Apr 05 18:29:33 roblabla kernel: random: systemd-udevd: uninitialized urandom read (16 bytes read)
+Apr 05 18:29:33 roblabla kernel: random: systemd-udevd: uninitialized urandom read (16 bytes read)
+Apr 05 18:29:33 roblabla kernel: random: systemd-udevd: uninitialized urandom read (16 bytes read)
+Apr 05 18:29:33 roblabla kernel: i8042: PNP: PS/2 Controller [PNP0303:PS2K,PNP0f03:PS2M] at 0x60,0x64 irq 1,12
+Apr 05 18:29:33 roblabla kernel: serio: i8042 KBD port at 0x60,0x64 irq 1
+Apr 05 18:29:33 roblabla kernel: serio: i8042 AUX port at 0x60,0x64 irq 12
+Apr 05 18:29:33 roblabla kernel: SCSI subsystem initialized
+Apr 05 18:29:33 roblabla kernel: ACPI: bus type USB registered
+Apr 05 18:29:33 roblabla kernel: usbcore: registered new interface driver usbfs
+Apr 05 18:29:33 roblabla kernel: usbcore: registered new interface driver hub
+Apr 05 18:29:33 roblabla kernel: usbcore: registered new device driver usb
+Apr 05 18:29:33 roblabla kernel: ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+Apr 05 18:29:33 roblabla kernel: ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+Apr 05 18:29:33 roblabla kernel: Warning! ehci_hcd should always be loaded before uhci_hcd and ohci_hcd, not after
+Apr 05 18:29:33 roblabla kernel: ehci-pci: EHCI PCI platform driver
+Apr 05 18:29:33 roblabla kernel: ohci-pci: OHCI PCI platform driver
+Apr 05 18:29:33 roblabla kernel: ohci-pci 0000:00:06.0: OHCI PCI host controller
+Apr 05 18:29:33 roblabla kernel: ohci-pci 0000:00:06.0: new USB bus registered, assigned bus number 1
+Apr 05 18:29:33 roblabla kernel: ohci-pci 0000:00:06.0: irq 22, io mem 0xf0804000
+Apr 05 18:29:33 roblabla kernel: libata version 3.00 loaded.
+Apr 05 18:29:33 roblabla kernel: input: AT Translated Set 2 keyboard as /devices/platform/i8042/serio0/input/input0
+Apr 05 18:29:33 roblabla kernel: hub 1-0:1.0: USB hub found
+Apr 05 18:29:33 roblabla kernel: hub 1-0:1.0: 12 ports detected
+Apr 05 18:29:33 roblabla kernel: ahci 0000:00:0d.0: version 3.0
+Apr 05 18:29:33 roblabla kernel: ahci 0000:00:0d.0: SSS flag set, parallel bus scan disabled
+Apr 05 18:29:33 roblabla kernel: ahci 0000:00:0d.0: AHCI 0001.0100 32 slots 2 ports 3 Gbps 0x3 impl SATA mode
+Apr 05 18:29:33 roblabla kernel: ahci 0000:00:0d.0: flags: 64bit ncq stag only ccc 
+Apr 05 18:29:33 roblabla kernel: scsi host0: ahci
+Apr 05 18:29:33 roblabla kernel: scsi host1: ahci
+Apr 05 18:29:33 roblabla kernel: ata1: SATA max UDMA/133 abar m8192@0xf0806000 port 0xf0806100 irq 21
+Apr 05 18:29:33 roblabla kernel: ata2: SATA max UDMA/133 abar m8192@0xf0806000 port 0xf0806180 irq 21
+Apr 05 18:29:33 roblabla kernel: ata_piix 0000:00:01.1: version 2.13
+Apr 05 18:29:33 roblabla kernel: scsi host2: ata_piix
+Apr 05 18:29:33 roblabla kernel: scsi host3: ata_piix
+Apr 05 18:29:33 roblabla kernel: ata3: PATA max UDMA/33 cmd 0x1f0 ctl 0x3f6 bmdma 0xd000 irq 14
+Apr 05 18:29:33 roblabla kernel: ata4: PATA max UDMA/33 cmd 0x170 ctl 0x376 bmdma 0xd008 irq 15
+Apr 05 18:29:33 roblabla kernel: ata4.00: ATAPI: VBOX CD-ROM, 1.0, max UDMA/133
+Apr 05 18:29:33 roblabla kernel: ata4.00: configured for UDMA/33
+Apr 05 18:29:33 roblabla kernel: ata1: SATA link up 3.0 Gbps (SStatus 123 SControl 300)
+Apr 05 18:29:33 roblabla kernel: ata1.00: ATA-6: VBOX HARDDISK, 1.0, max UDMA/133
+Apr 05 18:29:33 roblabla kernel: ata1.00: 209704799 sectors, multi 128: LBA48 NCQ (depth 31/32)
+Apr 05 18:29:33 roblabla kernel: ata1.00: configured for UDMA/133
+Apr 05 18:29:33 roblabla kernel: scsi 0:0:0:0: Direct-Access     ATA      VBOX HARDDISK    1.0  PQ: 0 ANSI: 5
+Apr 05 18:29:33 roblabla kernel: usb 1-1: new full-speed USB device number 2 using ohci-pci
+Apr 05 18:29:33 roblabla kernel: ata2: SATA link down (SStatus 0 SControl 300)
+Apr 05 18:29:33 roblabla kernel: hidraw: raw HID events driver (C) Jiri Kosina
+Apr 05 18:29:33 roblabla kernel: scsi 3:0:0:0: CD-ROM            VBOX     CD-ROM           1.0  PQ: 0 ANSI: 5
+Apr 05 18:29:33 roblabla kernel: sd 0:0:0:0: [sda] 209704799 512-byte logical blocks: (107 GB/100.0 GiB)
+Apr 05 18:29:33 roblabla kernel: sd 0:0:0:0: [sda] Write Protect is off
+Apr 05 18:29:33 roblabla kernel: sd 0:0:0:0: [sda] Mode Sense: 00 3a 00 00
+Apr 05 18:29:33 roblabla kernel: sd 0:0:0:0: [sda] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
+Apr 05 18:29:33 roblabla kernel: usbcore: registered new interface driver usbhid
+Apr 05 18:29:33 roblabla kernel: usbhid: USB HID core driver
+Apr 05 18:29:33 roblabla kernel:  sda: sda1
+Apr 05 18:29:33 roblabla kernel: sd 0:0:0:0: [sda] Attached SCSI disk
+Apr 05 18:29:33 roblabla kernel: input: VirtualBox USB Tablet as /devices/pci0000:00/0000:00:06.0/usb1/1-1/1-1:1.0/0003:80EE:0021.0001/input/input2
+Apr 05 18:29:33 roblabla kernel: hid-generic 0003:80EE:0021.0001: input,hidraw0: USB HID v1.10 Mouse [VirtualBox USB Tablet] on usb-0000:00:06.0-1/input0
+Apr 05 18:29:33 roblabla kernel: sr 3:0:0:0: [sr0] scsi3-mmc drive: 32x/32x xa/form2 tray
+Apr 05 18:29:33 roblabla kernel: cdrom: Uniform CD-ROM driver Revision: 3.20
+Apr 05 18:29:33 roblabla kernel: sr 3:0:0:0: Attached scsi CD-ROM sr0
+Apr 05 18:29:33 roblabla kernel: tsc: Refined TSC clocksource calibration: 2892.825 MHz
+Apr 05 18:29:33 roblabla kernel: clocksource: tsc: mask: 0xffffffffffffffff max_cycles: 0x29b2c91d4e0, max_idle_ns: 440795288293 ns
+Apr 05 18:29:33 roblabla kernel: floppy0: no floppy controllers found
+Apr 05 18:29:33 roblabla kernel: work still pending
+Apr 05 18:29:33 roblabla kernel: random: fast init done
+Apr 05 18:29:33 roblabla kernel: EXT4-fs (sda1): mounted filesystem with ordered data mode. Opts: (null)
+Apr 05 18:29:33 roblabla kernel: ip_tables: (C) 2000-2006 Netfilter Core Team
+Apr 05 18:29:33 roblabla systemd[1]: systemd 232 running in system mode. (+PAM -AUDIT -SELINUX -IMA -APPARMOR +SMACK -SYSVINIT +UTMP +LIBCRYPTSETUP +GCRYPT +GNUTLS +ACL +XZ +LZ4 +SECCOMP +BLKID +ELFUTILS +KMOD +IDN)
+Apr 05 18:29:33 roblabla systemd[1]: Detected virtualization oracle.
+Apr 05 18:29:33 roblabla systemd[1]: Detected architecture x86-64.
+Apr 05 18:29:33 roblabla systemd[1]: Set hostname to <roblabla>.
+Apr 05 18:29:33 roblabla systemd[1]: Started Forward Password Requests to Wall Directory Watch.
+Apr 05 18:29:33 roblabla systemd[1]: Listening on udev Control Socket.
+Apr 05 18:29:33 roblabla systemd[1]: Set up automount Arbitrary Executable File Formats File System Automount Point.
+Apr 05 18:29:33 roblabla systemd[1]: Started Dispatch Password Requests to Console Directory Watch.
+Apr 05 18:29:33 roblabla systemd[1]: Reached target Encrypted Volumes.
+Apr 05 18:29:33 roblabla systemd[1]: Listening on Journal Socket (/dev/log).
+Apr 05 18:29:33 roblabla kernel: EXT4-fs (sda1): re-mounted. Opts: data=ordered
+Apr 05 18:29:33 roblabla kernel: input: Power Button as /devices/LNXSYSTM:00/LNXPWRBN:00/input/input3
+Apr 05 18:29:33 roblabla kernel: ACPI: Power Button [PWRF]
+Apr 05 18:29:33 roblabla kernel: input: Sleep Button as /devices/LNXSYSTM:00/LNXSLPBN:00/input/input4
+Apr 05 18:29:33 roblabla kernel: ACPI: Sleep Button [SLPF]
+Apr 05 18:29:33 roblabla kernel: ACPI: AC Adapter [AC] (on-line)
+Apr 05 18:29:33 roblabla kernel: ACPI: Video Device [GFX0] (multi-head: yes  rom: no  post: no)
+Apr 05 18:29:33 roblabla kernel: input: Video Bus as /devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A03:00/LNXVIDEO:00/input/input5
+Apr 05 18:29:33 roblabla kernel: piix4_smbus 0000:00:07.0: SMBus base address uninitialized - upgrade BIOS or use force_addr=0xaddr
+Apr 05 18:29:33 roblabla systemd-journald[154]: Journal started
+Apr 05 18:29:33 roblabla systemd-journald[154]: System journal (/var/log/journal/15b023ab28f44918934e381fe91ec920) is 248.0M, max 4.0G, 3.7G free.
+Apr 05 18:29:32 roblabla systemd-modules-load[155]: Failed to find module 'vboxguest'
+Apr 05 18:29:32 roblabla systemd-modules-load[155]: Failed to find module 'vboxsf'
+Apr 05 18:29:32 roblabla systemd-modules-load[155]: Failed to find module 'vboxvideo'
+Apr 05 18:29:33 roblabla systemd[1]: Starting Flush Journal to Persistent Storage...
+Apr 05 18:29:33 roblabla kernel: e1000: Intel(R) PRO/1000 Network Driver - version 7.3.21-k8-NAPI
+Apr 05 18:29:33 roblabla kernel: e1000: Copyright (c) 1999-2006 Intel Corporation.
